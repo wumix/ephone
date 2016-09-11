@@ -1,0 +1,57 @@
+.profileHeader{ position: relative; background-repeat: no-repeat; background-size: cover; background-position: center; height: 350px; }
+.profileHeaderOverlay{ height: 350px; position: absolute; top: 0; left: 0; background-color: rgba(0,0,0,0.35); width: 100%; }
+.profileHeader > .img-circle{
+  border: 3px solid; position: absolute; width: 128px; height: 128px; left: 0; right: 0; margin: 0 auto; top: 30px;
+  -webkit-animation: border_color_change 2s infinite alternate;  -moz-animation: border_color_change 2s infinite alternate;
+  -o-animation: border_color_change 2s infinite alternate;  animation: border_color_change 2s infinite alternate;
+}
+.profileHeaderInfo{
+  text-align: center;  color: #fff;  position: absolute;  left: 0;  right: 0;  margin: 0 auto;
+  top: 155px;  max-width: 100%; width: 350px;
+}
+.profileHeaderBasicDetails > .img-responsive{ display: inline-block; }
+.profileSocialIcons{ margin-top: 25px; }
+.profileSocialIcons > a{
+  color: #fff;
+  padding: 3px 5px;
+  margin-right: 10px;
+  text-align: center;
+}
+.profileSocialIcons > a:hover{
+  -webkit-animation: logo_color_change 2s infinite alternate;  -moz-animation: logo_color_change 2s infinite alternate;
+  -o-animation: logo_color_change 2s infinite alternate;  animation: logo_color_change 2s infinite alternate;
+}
+.profileNav{ display: table; table-layout: fixed; width: 100%;  }
+.profileNav > a{
+  display: table-cell; padding: 10px;  text-align: center;  color: #fff;
+  background-color: #0B1318;  text-decoration: none; transition: background-color 0.2s linear;
+}
+.profileNav > a:hover{ background-color: #1FAE5B; }
+.profileNav > a.active{ background-color: #1FAE5B; }
+.btn-follow{ outline: none; position: absolute;  border-radius: 50%;  left: 25px;  top: -70px; border-color: transparent;  color: #424242; height: 40px;  width: 40px;  text-align: center; }
+.btn-flag{ outline: none; position: absolute;  border-radius: 50%;  right: 25px;  top: -70px; padding-top: 10px; border-color: #fff;  color: #fff; background-color: transparent; height: 40px;  width: 40px;  text-align: center; }
+.btn-flag:hover{ color: #424242; background-color: #fff; }
+.btn-flag:active{ color: #424242; background-color: #fff; }
+.btn-flag:focus{ color: #424242; background-color: #fff; }
+a.userFollow{ word-wrap: break-word; }
+a.userFollow > .img-responsive{ width: 100%; height: 150px; }
+a.userFollow > h4{ color: #424242; text-decoration: none; }
+a.userFollow:hover{ color: #424242; text-decoration: none; }
+.pro-icon{
+  -webkit-animation: logo_color_change 2s infinite alternate;  -moz-animation: logo_color_change 2s infinite alternate;
+  -o-animation: logo_color_change 2s infinite alternate;  animation: logo_color_change 2s infinite alternate;
+}
+.btn-facebook, .btn-facebook:hover, .btn-facebook:focus{
+  background-color: #395693;
+  color: #fff;
+}
+
+
+.profile-body{
+  margin-top: 15px;
+
+  h4{
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,121 @@
+.nav-sidebar-ctr{
+  position: fixed; top: 0; left: 0; height: 100%; background-color: #2a2a2a; width: 250px; padding-top: 65px; color: #D4D4D4;
+  z-index: 999;
+
+  & > div, .tab-content{ height: 100%; }
+  h3{ font-size: 16px; margin-left: 15px; }
+  .tab-pane:nth-child(2){
+    height: 100%; overflow-y: scroll;
+  }
+
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-button { width: 0px; height: 0px; }
+  ::-webkit-scrollbar-thumb { background: #e1e1e1; border: 0px none #ffffff; border-radius: 50px; }
+  ::-webkit-scrollbar-thumb:hover { background: #ffffff; }
+  ::-webkit-scrollbar-thumb:active { background: #000000; }
+  ::-webkit-scrollbar-track { background: #666666; border: 0px none #ffffff; border-radius: 48px; }
+  ::-webkit-scrollbar-track:hover { background: #666666; }
+  ::-webkit-scrollbar-track:active { background: #333333; }
+  ::-webkit-scrollbar-corner { background: transparent; }
+
+  ul.nav-tabs{ border-bottom: 1px solid #383838; }
+  ul.nav-tabs > li > a{
+    color: #fff; font-weight: bold; font-size: 12px; text-transform: uppercase; border: none; background-color: rgba(0,0,0,0.1);
+  }
+
+  ul.nav-tabs > li.active > a, ul.nav-tabs > li.active > a:hover, ul.nav-tabs > li.active > a:focus,
+  ul.nav-tabs > li > a:hover, ul.nav-tabs > li > a:focus{
+    background-color: #424242; border: none; color: #fff; border-radius: 0;
+  }
+
+  .nav-pills{
+    margin-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #383838;
+
+    li > a{
+      font-weight: bold;
+      color: #D4D4D4;
+      padding: 6px 15px;
+      font-size: 13px;
+      border-radius: 0;
+      border-left: 4px solid transparent;
+      transition: all .3s linear;
+
+      &:hover, &:focus{
+        background-color: #424242; color: #fff;
+        border-left: 4px solid #00ABD6;
+      }
+      i.fa{
+        padding-right: 16px;
+      }
+
+      button{
+        background-color: transparent; border: none; outline: none; padding: 0;
+        i.fa{ padding-right: 8px; }
+      }
+    }
+  }
+
+  .playlist-single-track-ctr{
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+
+    .track-img{ float: left; width: 30px; height: 30px; img{ width: 100%; height: 100%; }}
+    .track-title{ padding-left: 40px; }
+  }
+
+  .nav-pages{
+    padding-top: 5px; text-align: center;
+
+    li{
+      display: inline-block;
+      a{
+        padding: 5px; text-align: center; text-decoration: none; color: #999;
+        &:hover, &:focus, &:active{ background-color: transparent; color: #999; }
+      }
+    }
+  }
+}
+
+ul.social-media-icons{ text-align: center; padding: 0; width: 100%; list-style-type: none; }
+ul.social-media-icons > li{   line-height: 15px;  display: inline-block;  width: 32%; border: 1px solid #eee; background-color: #fff; transition: 0.3s all ease-in; }
+ul.social-media-icons > li.facebook:hover{ background-color: #39599f; color: #fff; }
+ul.social-media-icons > li.facebook:hover > a{ color: #fff; }
+ul.social-media-icons > li.facebook:hover > a i{ background-color: #39599f; }
+ul.social-media-icons > li.twitter:hover{ background-color: #45b0e3; color: #fff; }
+ul.social-media-icons > li.twitter:hover > a{ color: #fff; }
+ul.social-media-icons > li.twitter:hover > a i{ background-color: #45b0e3; }
+ul.social-media-icons > li.google:hover{ background-color: #fa0101; color: #fff; }
+ul.social-media-icons > li.google:hover > a{ color: #fff; }
+ul.social-media-icons > li.google:hover > a i{ background-color: #fa0101; }
+ul.social-media-icons > li.youtube:hover{ background-color: #cc181e; color: #fff; }
+ul.social-media-icons > li.youtube:hover > a{ color: #fff; }
+ul.social-media-icons > li.youtube:hover > a i{ background-color: #cc181e; }
+ul.social-media-icons > li.soundcloud:hover{ background-color: #F76700; color: #fff; }
+ul.social-media-icons > li.soundcloud:hover > a{ color: #fff; }
+ul.social-media-icons > li.soundcloud:hover > a i{ background-color: #F76700; }
+ul.social-media-icons > li.instagram:hover{ background-color: #517fa4; color: #fff; }
+ul.social-media-icons > li.instagram:hover > a{ color: #fff; }
+ul.social-media-icons > li.instagram:hover > a i{ background-color: #517fa4; }
+ul.social-media-icons > li a{ color: #444; text-decoration: none; display: block; overflow: hidden; padding: 0 0 6px; }
+ul.social-media-icons a i{
+  font-size: 28px; margin: 8px auto; width: 50px; color: #FFF; height: 50px; line-height: 50px; transition: all 0.3s linear;
+  display: block; text-align: center; background: #555; -webkit-border-radius: 50px; moz-border-radius: 50px; border-radius: 50px;
+}
+
+.sidebar-track{
+  .track-img{
+    width: 50px; float: left; img{ width: 100%; height: 50px; }
+  }
+  .track-info-ctr{
+    padding-top: 4px; padding-left: 60px; font-size: 12px;
+    a{ font-weight: 100; text-decoration: none; }
+    .track-artist a, .track-meta{ color: #999; margin-top: 4px; }
+    .track-title a{ color: #333; }
+    .track-meta .fa{ margin: 0 4px; }
+  }
+
+  margin-bottom: 10px;
+}

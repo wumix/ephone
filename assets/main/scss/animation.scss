@@ -1,0 +1,34 @@
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all 1s ease-in-out;
+  -moz-transition:all 1s ease-in-out;
+  -o-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
+}
+
+[ui-view].ng-enter {
+  -webkit-transform: scale3d(.3, .3, .3);
+  -ms-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  opacity: 0;
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+[ui-view].ng-leave {
+  opacity: 1;
+}
+
+[ui-view].ng-leave-active {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  -ms-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+}

@@ -1,0 +1,61 @@
+.colorful-header{  height: 8px;  }
+.colorful-header > div{  width: 25%;  float: left;  height: 100%;  }
+.colorful-header > div:nth-child(1){  background-color: #DE5765;  }
+.colorful-header > div:nth-child(2){  background-color: #49BF85;  }
+.colorful-header > div:nth-child(3){  background-color: #00ABD6;  }
+.colorful-header > div:nth-child(4){  background-color: #DE578D;  }
+
+.navbar-white{ background-color: #fff; border-color: #B4B4B4; border-radius: 0; color: #1E1E1E; }
+.navbar-brand{ color: #424242;  font-weight: bold; font-size: 24px; }
+.navbar-brand:hover{
+  -webkit-animation: logo_color_change 2s infinite alternate;  -moz-animation: logo_color_change 2s infinite alternate;
+  -o-animation: logo_color_change 2s infinite alternate;  animation: logo_color_change 2s infinite alternate;
+}
+.navbar-brand:active{
+  -webkit-animation: logo_color_change 2s infinite alternate;  -moz-animation: logo_color_change 2s infinite alternate;
+  -o-animation: logo_color_change 2s infinite alternate;  animation: logo_color_change 2s infinite alternate;
+}
+.navbar-brand:focus{
+  -webkit-animation: logo_color_change 2s infinite alternate;  -moz-animation: logo_color_change 2s infinite alternate;
+  -o-animation: logo_color_change 2s infinite alternate;  animation: logo_color_change 2s infinite alternate;
+}
+.navbar-brand > i{ font-weight: normal; }
+.navbar-brand > i:before{ font-size: 32px;  }
+#euphonize-main-navbar > .navbar-icons li{ width: 70px;  text-align: center; }
+#euphonize-main-navbar > .navbar-icons > li > a{ min-height: 56px; font-size: 18px;  color: #424242;  padding-top: 20px; transition: background-color 0.25s linear, color 0.25s linear; }
+#euphonize-main-navbar > .navbar-icons > li > a > span{ display: none; font-size: 11px; }
+#euphonize-main-navbar > .navbar-icons > li > a:hover > i{ display: none; font-size: 12px; }
+#euphonize-main-navbar > .navbar-icons > li > a:hover > span{ display: block; }
+#euphonize-main-navbar > .navbar-icons > li > a:hover{  background-color: #00ABD6; color: #fff; }
+#euphonize-main-navbar > .navbar-icons > li > a:active{  background-color: #00ABD6; color: #fff; }
+#euphonize-main-navbar > .navbar-icons > li > a:focus{  background-color: #00ABD6; color: #fff; }
+
+#euphonize-main-navbar > .navbar-right > li > a{ min-height: 56px; padding-left: 20px; }
+.nav-search-btn{ font-size: 24px; color: #424242; border-left: 1px solid #ccc; }
+#euphonize-main-navbar > .navbar-right > li > a.nav-search-btn:hover{ background-color: transparent; color: #424242; }
+
+#euphonize-main-navbar > .navbar-right > li > a{ min-height: 56px; padding-left: 20px; }
+.nav-search-btn{ font-size: 24px; color: #424242; border-left: 1px solid #ccc; }
+#euphonize-main-navbar > .navbar-right > li > a.nav-search-btn:hover{ background-color: transparent; color: #424242; }
+
+#euphonize-main-navbar > .navbar-right .navbar-btn{ margin-top: 12px;  margin-right: 10px;  min-height: 20px;  padding: 6px 15px;}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  margin-left: 0;
+}
+li.navbar-profile > a{ padding-bottom: 0; color: #424242; }
+.navbar-profile > a > img{  width: 32px; height: 32px; margin-right: 5px; border: 1px solid #E2E2E2; }
+li.navbar-profile > a:hover{ background: none; }
+li.navbar-profile > .dropdown-menu{ padding: 0; }
+li.navbar-profile > .dropdown-menu > li > a{ padding: 10px 20px; }
+li.navbar-profile > .dropdown-menu > li > a:hover{ background-color: #424242; color: #fff; }
+li.navbar-profile > .dropdown-menu > li > a > .fa{ margin-right: 8px; }
+li.notification-dropdown > a{ color: #424242;  padding-top: 20px;  padding-bottom: 0;  width: 60px;  position: relative; }
+li.notification-dropdown > .fa{ position: absolute;  bottom: 10px;  right: 15px;  color: #DE5765; }
+@media only screen and (max-width: 767px) {
+  #euphonize-main-navbar > .navbar-icons li{ width: 100%; }
+  #euphonize-main-navbar > .navbar-icons li > a{ color: #424242; }
+  #euphonize-main-navbar > .navbar-icons li > a > i{ display: none;  }
+  #euphonize-main-navbar > .navbar-icons li > a > span{ display: block; }
+  #euphonize-main-navbar > .navbar-right > li > a{ width: 100%; text-align: center; }
+}

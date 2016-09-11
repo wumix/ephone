@@ -1,0 +1,11 @@
+@media (max-width: 1024px) {
+  .nav-sidebar-ctr{ left: -250px; }
+  .ui-view-container{ margin-left: 0 !important; }
+
+  .navbar-collapse.collapse { display: none !important; }
+  .navbar-collapse { overflow-x: visible !important; }
+  .navbar-collapse.in { overflow-y: auto !important; }
+  .collapse.in { display: block !important; }
+  .navbar-toggle{ display: block !important; }
+  .navbar-header{ width: 100%; }
+}

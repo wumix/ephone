@@ -1,0 +1,35 @@
+.btn-primary{ background-color: $primary; }
+.btn-info{ background-color: $info; }
+.btn-warning{ background-color: $warning; }
+.btn-danger{ background-color: $danger; }
+.btn-success{ background-color: $success; }
+
+.alert{ color: $white; }
+.alert-info{ background-color: $info; }
+.alert-warning{ background-color: $warning; }
+.alert-danger{ background-color: $danger; }
+.alert-success{ background-color: $success; }
+
+.panel-primary, .panel-info, .panel-warning, .panel-danger, .panel-success{ border-color: #ddd; .panel-heading{ border-color: transparent; font-weight: bold; }  }
+.panel-primary .panel-heading{ background-color: $primary; color: $white; }
+.panel-info .panel-heading{ background-color: $info; color: $white; }
+.panel-warning .panel-heading{ background-color: $warning; color: $white; }
+.panel-danger .panel-heading{ background-color: $danger; color: $white; }
+.panel-success .panel-heading{ background-color: $success; color: $white; }
+
+.nav-tabs{
+  text-align: center; margin-bottom: 10px;
+
+  & > li.uib-tab{
+    cursor: pointer;
+
+    & > a{
+      border: 1px solid #D7D7D7; font-weight: bold; font-size: 16px;
+      border-radius: 0; color: $black; background-color: #FBFAFA;
+      transition: all .25s linear; margin-right: 0; padding: 12px;
+
+      &:hover{ background-color: $main; color: $white; }
+    }
+    &.active > a, &.active > a:hover{ background-color: $main; color: #fff; font-weight: bold; }
+  }
+}

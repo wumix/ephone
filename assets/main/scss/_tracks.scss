@@ -1,0 +1,123 @@
+/***************************************/
+/************ TRACKS *******************/
+/***************************************/
+.single-track-ctr{
+  overflow:hidden; margin-bottom: 25px;  padding-bottom: 20px;  border-bottom: 1px solid #ccc;
+
+  .track-img{
+    float: left; min-width: 100px; width: 100px;
+    .img-rounded{ width: 100%; display: block; margin: 0 auto; }
+  }
+
+  .track-info-ctr{
+    padding-left: 20px; overflow: hidden;
+
+    h3.track-title{
+      margin-top: 5px;  font-weight: bold;  font-size: 18px;
+      a{ color: #424242; text-decoration: none; }
+      .release-date{ font-size: 14px; font-weight: bold; padding-top: 5px; }
+    }
+
+    .track-user{
+      font-size: 13px;  font-weight: 300;
+      a{ color: #424242; text-decoration: none; }
+    }
+  }
+}
+
+/***************************************/
+/************ UPLOAD *******************/
+/***************************************/
+#trackDropzone{
+  padding: 50px;  border: 3px dashed #ccc;  border-radius: 5px;  text-align: center; margin-bottom: 25px;
+  cursor: pointer; transition: background-color 0.3s ease-in, color 0.3s linear, border 0.3s linear;
+
+  &:hover{ background-color: #424242;  color: #fff;  border-color: transparent; }
+}
+
+.trackOverview{
+  padding: 10px; margin-top: 15px; border: 1px dashed #ccc; background-color: #f4f4f4; border-radius: 5px;
+  .btn{ margin-left: 5px; margin-top: 5px; }
+}
+
+.track-ctr{
+  h4{ margin-top: 0; }
+  .media a{ color: #424242; text-decoration: none; &:hover, &:focus{ color: #424242; text-decoration: none; } }
+  .media-object{ width: 32px; height: 32px; }
+  .track-user{
+    margin-top: 6px;
+    a{ font-weight: bold; font-size: 16px; color: #424242; text-decoration: none; }
+  }
+}
+
+.trackHeader{
+  position: relative; background-repeat: no-repeat; background-size: cover; background-position: center; height: 225px;
+  .trackHeaderOverlay{
+    height: 225px; position: absolute; top: 0; left: 0; background-color: rgba(0,0,0,0.4); width: 100%;
+  }
+  .track-img{ display: block; position: absolute; border-radius: 10px; right: 20px; left: auto; top: 0; bottom: 0; margin: auto; width: 150px; height: 150px; }
+  .btn{ position: absolute; top: 60px; left: 50px; width: 50px; height: 46px; }
+  .track-info{
+    color: #fff;
+    position: absolute; left: 125px; top: 50px;
+    h1{ margin: 0; }
+    h3{
+      margin: 0;
+      a{ text-decoration: none; color: rgba(255,255,255,0.9); font-weight: 300; }
+    }
+  }
+  small{ position: absolute; right: 60px; bottom: 20px; a{ color: #fff; &:hover, &:focus{ color: #fff; } } }
+}
+
+.trackMetaCtr{
+  border-top: 3px solid #00ABD6;
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  overflow: hidden;
+
+  .trackMetaInfo{
+    float: left;
+    margin-right: 25px;
+    .track-meta-detail-title{ color: #bcbcbc; font-size: 12px; font-weight: 300; }
+    .track-meta-detail-desc{  }
+  }
+  .btn.pull-right{ margin-left: 6px; }
+}
+.track-desc{ white-space: pre; word-break: break-word; }
+.track-tags{ .label{ margin-right: 3px; } }
+
+.trackBtns{ margin-top: 15px; }
+.trackBtns > .btn{ font-size: 12px; }
+.latestCtr{ border-radius: 8px; min-height: 150px; border-bottom: 1px solid #DFDFDF;  border-left: 1px solid #ECECEC;  border-right: 1px solid #ECECEC; border-top: 5px solid; }
+
+/***************************************/
+/************ EDIT *******************/
+/***************************************/
+#editTrackForm{
+  .bootstrap-tagsinput{ width: 100%; }
+  ul.nav-tabs {
+    margin-bottom: 10px;
+
+    li > a {
+      background-color: #FBFAFA;
+      border: 1px solid #D7D7D7;
+      padding: 15px;
+      color: #424242;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+  ul.nav-tabs > li.active > a, ul.nav-tabs > li.active > a:hover, ul.nav-tabs > li.active > a:focus,
+  ul.nav-tabs > li > a:hover, ul.nav-tabs > li > a:focus{
+    background-color: #49BF85;  color: #fff; border-radius: 0; border-color: #49BF85;
+  }
+
+  .license-group{
+    a{ transition: background-color 0.3s ease-in, color 0.3s linear; }
+    a:hover{ background-color: #49BF85;  color: #fff; }
+    a:hover > h4.list-group-item-heading{ color: #fff; }
+    a.license-item-active{ background-color: #49BF85;  color: #fff; }
+    a.license-item-active > h4.list-group-item-heading{ color: #fff; }
+  }
+}
